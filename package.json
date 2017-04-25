@@ -1,0 +1,22 @@
+{
+  "name": "kiwi classifieds",
+  "version": "1.0.0",
+  "description": "Find Property, Jobs, Cars and much much more - Kiwi Classifieds",
+  "main": "./app/scripts/app.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Javascript",
+    "Applications"
+  ],
+  "author": "Team Kiwi",
+  "license": "MIT",
+  "dependencies": {
+    "systemjs": "^0.20.12",
+    "systemjs-plugin-babel": "0.0.21"
+  }
+}
