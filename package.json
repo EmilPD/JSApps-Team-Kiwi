@@ -16,6 +16,11 @@
   "author": "Team Kiwi",
   "license": "MIT",
   "dependencies": {
+    "bootstrap": "^3.3.7",
+    "express": "^4.15.2",
+    "handlebars": "^4.0.6",
+    "jquery": "^3.2.1",
+    "navigo": "^4.6.2",
     "systemjs": "^0.20.12",
     "systemjs-plugin-babel": "0.0.21"
   }
