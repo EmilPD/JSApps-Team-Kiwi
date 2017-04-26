@@ -5,20 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kiwi Classifieds</title>
     <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <header id="header">
-    
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-5 pull-left">
+                <div id="logo">
+                    <a href="#/home"><img src="./images/logo-kiwi-classifieds.png" alt="Team Kiwi logo"></a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-7 pull-right">
+                <div id="top-right-panel">
+                    <div id="login-register">
+                        <a href="#/login">Login</a>
+                        <span>/</span>
+                        <a href="#/register">Register</a>
+                    </div>
+                    <div id="post-free-ad">
+                        <a href="#/postfreead" class="btn btn-primary pull-right" id="postAdBtn">Post Free Ad</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
 
-<div id="main">
-    
+<div id="top-container">
+    <div class="container">
+        <div id="classifieds-count">
+            340 classifieds
+        </div>
+        <div id="select-category">
+            <label for="categories">Select category</label>
+            <select id="categories" name="select_category">
+                <option selected value="categories">All Categories</option>
+                <option value="cars-vehicles">Cars & Vehicles</option>
+                <option value="property">Property</option>
+                <option value="hobbies">Hobbies</option>
+                <option value="pets">Pets & Animals</option>
+                <option value="home-garden">Home & Garden</option>
+                <option value="electronics">Electronics</option>
+                <option value="services">Services</option>
+                <option value="fashion-beauty">Fashion & Beauty</option>
+                <option value="jobs">Jobs</option>
+            </select>
+        </div>
+    </div>
 </div>
 
-<footer>
+<div id="main">
+    <div class="container">
+        <h1 id="main-title">Latest ads</h1>
+        <div id="classifieds">
+            <div class="row eq-height">
+                <div class="col-xs-12 col-sm-6 col-md-4 eq-height">
+                    <article class="ad-single-compact">
+                        <div class="ad-title">Title</div>
+                        <div class="ad-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.</div>
+                        <div class="ad-contact-info">
+                            <div class="ad-contact-phone">0898989898</div>
+                            <div class="ad-contact-email">sadsd@asdasd.bg</div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 eq-height">
+                    <article class="ad-single-compact">
+                        <div class="ad-title">Title</div>
+                        <div class="ad-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.</div>
+                        <div class="ad-contact-info">
+                            <div class="ad-contact-phone">0898989898</div>
+                            <div class="ad-contact-email">sadsd@asdasd.bg</div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 eq-height">
+                    <article class="ad-single-compact">
+                        <div class="ad-title">Title</div>
+                        <div class="ad-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab no Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.</div>
+                        <div class="ad-contact-info">
+                            <div class="ad-contact-phone">0898989898</div>
+                            <div class="ad-contact-email">sadsd@asdasd.bg</div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
 
+<footer class="text-center footer">
+    <div class="row">
+        <div>
+            <small><strong>Author:</strong> <a href="https://github.com/???" target="_blank">Team Kiwi</a></small>
+            <br>
+            <small><strong>Members:</strong> <a href="https://github.com/EmilPD">qwerty123</a>, <a href="https://github.com/EmilPD">d3n1000</a></small>
+            <br>
+            <small><strong>&copy; 2017</strong></small>
+        </div>
+    </div>
 </footer>
 
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="libs/systemjs/dist/system.js"></script>
+    <script src="libs/handlebars/dist/handlebars.js"></script>
+    <script src="libs/navigo/lib/navigo.js"></script>
+    <script src="./scripts/system-config.js"></script>
 </body>
 </html>
