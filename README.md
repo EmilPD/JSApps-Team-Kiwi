@@ -9,7 +9,7 @@ Name | TelerikAcademy user | GitHub user
 Емил Димитров | qwerty123 | EmilPD
 
 <br>
-<div style="font-size: 2rem; font weight: 900;">Project requirements</div>
+<div><strong>Project requirements</strong></div>
 <ol>
     <li><strong>Use jQuery</strong></li>
     <li><strong>Implement OOP design</strong>
