@@ -2,7 +2,222 @@
     background-color: #eee;
 }
 
+#logo {
+    margin: 1rem 2rem;
+}
+
+#logo img {
+    max-height: 50px;
+}
+
 #main {
     background-color: #fafafa;
     min-height: 500px;
 }
+
+#top-right-panel {
+    margin: 2rem;
+    text-align: right;
+}
+
+#login-register,
+#post-free-ad {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#login-register {
+    padding-right: 1rem;
+}
+
+#select-category {
+    margin-top: 1rem;
+}
+
+#select-category select {
+    height: 40px;
+    padding: 0 1.5rem 0 1rem;
+    font-size: 1.6rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: inset 1px 1px 4px rgba(0,0,0,0.07);
+}
+
+#top-container {
+    background: url(../images/select-category-bg.png) 0 center repeat-x transparent;
+    text-align: center;
+    padding: 2rem;
+}
+
+/*
+* Select for Firefox
+*/
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #eeeeee url("../images/select-arrow.png") no-repeat center right;
+    text-indent: 0.01px;
+    text-overflow: '';
+}
+
+#main-title {
+    text-align: center;
+    text-transform: capitalize;
+    margin: 2rem 0 3rem;
+}
+
+#login-form,
+#register-form,
+#post-ad-form {
+    width: 50%;
+    margin: 0 auto 3rem;
+    padding: 2rem;
+    background-color: #fefefe;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+#login-form label,
+#register-form label,
+#post-ad-form label {
+    margin-bottom: 0.7rem;
+}
+
+#login-username,
+#login-password {
+    width: 100%;
+}
+
+.ad-single {
+    width: 70%;
+    margin: 0 auto 3rem;
+}
+
+.ad-single article {
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 1px 1px 16px rgba(0,0,0,0.1);
+}
+
+.ad-single-compact {
+    display: block;
+    background-color: #fff;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    width: 100%;
+    min-height: 200px;
+    box-shadow: 1px 1px 16px rgba(0,0,0,0.1);
+}
+
+.ad-single-compact:hover {
+    background-color: #faebd7;
+    cursor: pointer;
+}
+
+.ad-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    
+}
+
+.ad-description {
+    padding: 1rem 0;
+}
+
+.ad-contact-phone,
+.ad-contact-email {
+    font-family: FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.ad-contact-email:before {
+    content: "\f0e0";
+    padding-right: 0.4rem;
+}
+
+.ad-contact-phone:before {
+    content: "\f095";
+    padding-right: 0.4rem;
+}
+
+.nav-back,
+.fb-share {
+    padding: 2rem;
+}
+
+footer {
+    background-color: #f5f5dc;
+    padding: 2rem;
+}
+
+/* Overriding Bootstrap styles */
+
+.btn-primary {
+    color: #fcfbf7;
+    background-color: #d26c07;
+    background-image: none;
+    border-color: #b95f06;
+    border-bottom: 3px solid #bb5f01;
+}
+
+.btn {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+/*
+ * BEGIN Row with equal height columns
+ * --------------------------------------------------
+ */
+.eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
+.ad-single-compact {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/*
+ * END Row with equal height columns
+ * --------------------------------------------------
+ */
+
+
+ /* 
+ * BEGIN Responsive CSS
+ * --------------------------------------------
+ */
+
+@media only screen and (min-device-width: 120px) and (max-device-width: 991px) {
+
+    #logo a img {
+        text-align: center;
+    }
+    #top-right-panel,
+    #logo {
+        text-align: center;
+    }
+    #classifieds {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .eq-height {
+        display: block;
+    }
+
+
+}
+
+ /* 
+ * END Responsive CSS
+ * --------------------------------------------
+ */
