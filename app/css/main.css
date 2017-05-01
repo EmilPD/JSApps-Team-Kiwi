@@ -50,7 +50,8 @@
 }
 
 /*
-* Select for Firefox
+* BEGIN Select fix for Firefox
+* ------------------------------
 */
 
 select {
@@ -61,10 +62,22 @@ select {
     text-overflow: '';
 }
 
+/*
+* END Select fix for Firefox
+* -----------------------------
+*/
+
 #main-title {
     text-align: center;
     text-transform: capitalize;
     margin: 2rem 0 3rem;
+}
+
+#category-title {
+    text-align: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    margin-bottom: 2rem;
 }
 
 #login-form,
@@ -119,7 +132,6 @@ select {
     font-weight: 700;
     padding-bottom: 0.5rem;
     border-bottom: 1px solid rgba(0,0,0,0.1);
-    
 }
 
 .ad-description {
@@ -154,7 +166,10 @@ footer {
     padding: 2rem;
 }
 
-/* Overriding Bootstrap styles */
+/* 
+* BEGIN Overriding Bootstrap styles 
+* ----------------------------
+*/
 
 .btn-primary {
     color: #fcfbf7;
@@ -169,21 +184,27 @@ footer {
     text-transform: uppercase;
 }
 
+/* 
+* END Overriding Bootstrap styles 
+* ----------------------------
+*/
+
 
 /*
  * BEGIN Row with equal height columns
  * --------------------------------------------------
  */
 .eq-height {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .ad-single-compact {
-  padding-top: 15px;
-  padding-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 /*
