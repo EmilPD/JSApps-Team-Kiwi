@@ -1,0 +1,110 @@
+{
+  "categories": [
+    {
+      "shortname": "cars",
+      "name": "Cars & Vehicles",
+      "ads": [
+        {
+          "title": "Cars",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
+          "phone": "0899998989",
+          "email": "sdsds@asdsad.bg"
+        },
+        {
+          "title": "Cars",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
+          "phone": "0899998989",
+          "email": "sdsds@asdsad.bg"
+        },
+        {
+          "title": "Cars",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
+          "phone": "0899998989",
+          "email": "sdsds@asdsad.bg"
+        },
+        {
+          "title": "Cars",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
+          "phone": "0899998989",
+          "email": "sdsds@asdsad.bg"
+        }
+      ]
+    },
+    {
+      "shortname": "pets",
+      "name": "Pets",
+      "ads": [
+        {
+          "title": "Pets",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
+          "phone": "0899998989",
+          "email": "sdsds@asdsad.bg"
+        },
+        {
+          "title": "Pets",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
+          "phone": "0899998989",
+          "email": "sdsds@asdsad.bg"
+        },
+        {
+          "title": "Pets",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
+          "phone": "0899998989",
+          "email": "sdsds@asdsad.bg"
+        }
+      ]
+    },
+    {
+      "shortname": "services",
+      "name": "Services",
+      "ads": [
+        {
+          "title": "Services",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
+          "phone": "0899998989",
+          "email": "sdsds@asdsad.bg"
+        },
+        {
+          "title": "Services",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
+          "phone": "0899998989",
+          "email": "sdsds@asdsad.bg"
+        },
+        {
+          "title": "Services",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
+          "phone": "0899998989",
+          "email": "sdsds@asdsad.bg"
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "user1",
+      "passHash": "pass1",
+      "fullname": "Dancho Ivanov",
+      "phone": "0899998989",
+      "email": "user1@asd.bg"
+    },
+    {
+      "id": 2,
+      "username": "user2",
+      "passHash": "pass2",
+      "fullname": "Mincho Ivanov",
+      "phone": "0899333444",
+      "email": "user2@asd.bg"
+    },
+    {
+      "id": 3,
+      "username": "user3",
+      "passHash": "pass3",
+      "fullname": "Gancho Ivanov",
+      "phone": "0899555666",
+      "email": "user3@asd.bg"
+    }
+  ],
+  "posts": [],
+  "user": {}
+}
