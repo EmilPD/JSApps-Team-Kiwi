@@ -1,11 +1,11 @@
 import { router } from './routing.js';
-//import { db } from './controllers/data-controller.js';
 
 console.log('stana');
 
 $(function(){
     $('#categories').change(function () {
-        var url = '/category/' + $(this).val();
+        let category = $(this).val();
+        let url = '/categories/' + category;
         window.location.hash = url;
         console.log('select Changed');
     });
