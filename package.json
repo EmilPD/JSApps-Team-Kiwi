@@ -1,5 +1,5 @@
 {
-  "name": "kiwi classifieds",
+  "name": "kiwi-classifieds",
   "version": "1.0.0",
   "description": "Find Property, Jobs, Cars and much much more - Kiwi Classifieds",
   "main": "./app/scripts/app.js",
@@ -17,12 +17,18 @@
   "author": "Team Kiwi",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.17.1",
     "bootstrap": "^3.3.7",
     "express": "^4.15.2",
     "handlebars": "^4.0.6",
     "jquery": "^3.2.1",
+    "json-server": "^0.10.0",
+    "lodash": "^4.17.4",
+    "lowdb": "^0.16.2",
     "navigo": "^4.6.2",
     "systemjs": "^0.20.12",
-    "systemjs-plugin-babel": "0.0.21"
+    "systemjs-plugin-babel": "0.0.21",
+    "toastr": "^2.1.2",
+    "underscore-db": "^0.12.2"
   }
 }
