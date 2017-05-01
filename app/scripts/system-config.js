@@ -9,9 +9,6 @@ SystemJS.config({
   // app start script
   'app': '../scripts/app.js',
 
-  // Library files
-   'jquery': 'libs/jquery/dist/jquery.min.js',
-   'handlebars': 'libs/handlebars/dist/handlebars.amd.js',
  },
  packages: {
      '/': {
