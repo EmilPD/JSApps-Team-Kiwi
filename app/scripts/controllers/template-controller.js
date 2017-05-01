@@ -1,11 +1,17 @@
 import { templateLoader as tl} from '../template-loader.js';
+import { data } from '../data/data.js';
 
 let TemplateController = (function() {
     class TemplateController {
         loadHome() {
-            Promise.all([tl.loadTemplate('home')])
-                .then((template) => $('#main').html(template))
-                .catch(console.log);
+            data.getCategory('all')
+            .then((data) => {
+                Promise.all([data, tl.loadTemplate('home')])
+                    .then(([data, template]) => {
+                        $('#main').html(template(data));
+                    })
+                    .catch(console.log);
+            })
         }
 
         loadLogin() {
@@ -24,6 +30,16 @@ let TemplateController = (function() {
             Promise.all([tl.loadTemplate('postfreead')])
                 .then((template) => $('#main').html(template))
                 .catch(console.log);
+        }
+		
+		loadCategory(categoryName) {
+            data.getCategory(categoryName)
+            .then((data) => {
+                //console.log(data + ' from templ. controller');
+                Promise.all([data, tl.loadTemplate('category')])
+                    .then(([data, template]) => $('#main').html(template(data)))
+                    .catch(console.log);
+            })
         }
     }
 
