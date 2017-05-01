@@ -1,1 +1,22 @@
-<div>Home handlebars</div>
+<div class="container">
+    <h1 id="main-title">Latest Ads</h1>
+    <div id="classifieds">
+        {{#result}}
+            <h2 id="category-title">{{name}}</h2>
+            <div class="row eq-height">
+                {{#ads}}
+                    <div class="col-xs-12 col-sm-6 col-md-4 eq-height">
+                        <article class="ad-single-compact">
+                            <div class="ad-title">{{title}}</div>
+                            <div class="ad-description">{{description}}</div>
+                            <div class="ad-contact-info">
+                                <div class="ad-contact-phone">{{phone}}</div>
+                                <div class="ad-contact-email">{{email}}</div>
+                            </div>
+                        </article>
+                    </div>
+                {{/ads}}
+            </div>
+        {{/result}}
+    </div>
+</div>
