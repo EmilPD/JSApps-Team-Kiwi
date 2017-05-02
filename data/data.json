@@ -54,6 +54,30 @@
         }
       ]
     },
+	{
+      "shortname": "homegarden",
+      "name": "Home & Garden",
+      "ads": [
+        {
+          "title": "Home & Garden",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
+          "phone": "0899998989",
+          "email": "sdsds@asdsad.bg"
+        },
+        {
+          "title": "Home & Garden",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
+          "phone": "0899998989",
+          "email": "sdsds@asdsad.bg"
+        },
+        {
+          "title": "Home & Garden",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
+          "phone": "0899998989",
+          "email": "sdsds@asdsad.bg"
+        }
+      ]
+    },
     {
       "shortname": "services",
       "name": "Services",
