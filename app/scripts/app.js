@@ -1,14 +1,14 @@
 import { router } from './routing.js';
-
-console.log('stana');
-
-$(function(){
-    $('#categories').change(function () {
-        let category = $(this).val();
-        let url = '/categories/' + category;
+    
+$('#main').on('click', function (ev) {
+    let target = ev.target;
+    let article = $(target).closest('article');
+    let adId = article.data('ad-id');
+    
+    if (adId) {
+        let url = '/classifieds/' + adId;
         window.location.hash = url;
-        console.log('select Changed');
-    });
+    }
 });
 
 router.init();
