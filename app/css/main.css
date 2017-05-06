@@ -1,3 +1,7 @@
+.hidden {
+    display: none;
+}
+
 #header {
     background-color: #eee;
 }
@@ -12,7 +16,7 @@
 
 #main {
     background-color: #fafafa;
-    min-height: 500px;
+    min-height: 400px;
 }
 
 #top-right-panel {
@@ -101,9 +105,17 @@ select {
     width: 100%;
 }
 
+#back-btn {
+    display: block;
+    text-align: right;
+}
+
 .ad-single {
     width: 70%;
-    margin: 0 auto 3rem;
+    margin: 2rem auto 3rem;
+    padding: 2rem;
+    background-color: #f5f5dc;
+    box-shadow: 2px 2px 7px rgba(0,0,0,0.3);
 }
 
 .ad-single article {
@@ -156,6 +168,10 @@ select {
     padding-right: 0.4rem;
 }
 
+#ad-single-bottom-container {
+    text-align: center;
+}
+
 .nav-back,
 .fb-share {
     padding: 2rem;
@@ -165,6 +181,21 @@ footer {
     background-color: #f5f5dc;
     padding: 2rem;
 }
+
+/* 
+* BEGIN Overriding Toastr styles 
+* ----------------------------
+*/
+
+.toast-top-right {
+   top: 80px;
+   right: 12px;
+}
+
+/* 
+* END Overriding Toastr styles 
+* ----------------------------
+*/
 
 /* 
 * BEGIN Overriding Bootstrap styles 
