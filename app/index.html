@@ -22,9 +22,12 @@
             <div class="col-xs-12 col-md-7 pull-right">
                 <div id="top-right-panel">
                     <div id="login-register">
-                        <a href="#/login">Login</a>
-                        <span>/</span>
-                        <a href="#/register">Register</a>
+                        <div id="login-register-links">
+                            <a href="#/login">Login</a>
+                            <span>/</span>
+                            <a href="#/register">Register</a>
+                        </div>
+                        <a id="logout-link" class="hidden" href="#/logout">Logout</a>
                     </div>
                     <div id="post-free-ad">
                         <a href="#/postfreead" class="btn btn-primary pull-right" id="postAdBtn">Post Free Ad</a>
@@ -36,26 +39,7 @@
 </header>
 
 <div id="top-container">
-    <div class="container">
-        <div id="classifieds-count">
-            340 classifieds
-        </div>
-        <div id="select-category">
-            <label for="categories">Select category</label>
-            <select id="categories" name="select_category">
-                <option selected value="all">All Categories</option>
-                <option value="cars">Cars & Vehicles</option>
-                <option value="property">Property</option>
-                <option value="hobbies">Hobbies</option>
-                <option value="pets">Pets & Animals</option>
-                <option value="homegarden">Home & Garden</option>
-                <option value="electronics">Electronics</option>
-                <option value="services">Services</option>
-                <option value="fashion">Fashion & Beauty</option>
-                <option value="jobs">Jobs</option>
-            </select>
-        </div>
-    </div>
+    
 </div>
 
 <div id="main">
@@ -67,7 +51,7 @@
         <div>
             <small><strong>Author:</strong> <a href="https://github.com/???" target="_blank">Team Kiwi</a></small>
             <br>
-            <small><strong>Members:</strong> <a href="https://github.com/EmilPD">qwerty123</a>, <a href="https://github.com/EmilPD">d3n1000</a></small>
+            <small><strong>Members:</strong> <a href="https://github.com/EmilPD">qwerty123</a>, <a href="https://github.com/denislav48">d3n1000</a></small>
             <br>
             <small><strong>&copy; 2017</strong></small>
         </div>
@@ -80,6 +64,7 @@
     <script src="libs/jquery/dist/jquery.min.js"></script>
     <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="libs/handlebars/dist/handlebars.js"></script>
+    <script src="libs/crypto-js/crypto-js.js"></script>
     <script src="libs/toastr/build/toastr.min.js"></script>
     
 </body>
