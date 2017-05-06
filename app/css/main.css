@@ -176,6 +176,9 @@ select {
 .fb-share {
     padding: 2rem;
 }
+.fb-share-button {
+    display: inline-block;
+}
 
 footer {
     background-color: #f5f5dc;

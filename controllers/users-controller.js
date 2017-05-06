@@ -67,7 +67,8 @@ module.exports = function(db) {
         username: reqUser.username,
         passHash: passHash,
         phone: reqUser.phone,
-        email: reqUser.email
+        email: reqUser.email,
+
       })
       .write();
       
