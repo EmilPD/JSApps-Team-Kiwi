@@ -6,6 +6,7 @@
     <title>Kiwi Classifieds</title>
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/bootstrap-select/dist/css/bootstrap-select.css">
     <link rel="stylesheet" href="libs/toastr/build/toastr.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="libs/jquery-ui-dist/jquery-ui.min.css">
@@ -46,7 +47,7 @@
         </div>
         <div id="select-category">
             <label for="categories">Select category</label>
-            <select id="categories" name="select_category">
+            <select class="selectpicker" id="categories" name="select_category">
                 <option value="all">All Categories</option>
                 <option value="cars">Cars & Vehicles</option>
                 <option value="property">Property</option>
@@ -94,8 +95,17 @@
     <script src="libs/jquery/dist/jquery.min.js"></script>
     <script src="libs/jquery-ui-dist/jquery-ui.min.js"></script>
     <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="libs/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
     <script src="libs/handlebars/dist/handlebars.js"></script>
     <script src="libs/crypto-js/crypto-js.js"></script>
     <script src="libs/toastr/build/toastr.min.js"></script>
+
+<script>
+    $('.selectpicker').selectpicker({
+        style: 'btn-success',
+        size: 8,
+    });
+
+</script>
 </body>
 </html>
