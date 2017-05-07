@@ -2,6 +2,12 @@
     <h1 id="main-title">Register</h1>
     <div id="register">
         <form id="register-form">
+            <label for="user-type">Select User Type</label><br>
+            <select id="user-type" name="user_type" class="form-control">
+                <option selected value="vip">VIP User</option>
+                <option value="normal">Normal User</option>
+            </select><br>
+
             <label for="input-name">Name</label><br>
             <input type="text" name="name" id="input-name" class="form-control"/><br>
 
@@ -11,11 +17,13 @@
             <label for="input-password">Password</label><br>
             <input type="password" name="password" id="input-password" class="form-control"/><br>
 
-            <label for="input-phone">Phone number</label><br>
-            <input type="text" name="phone" id="input-phone" class="form-control"/><br>
+            <div id="vip-user-info">
+                <label for="input-phone">Phone number</label><br>
+                <input type="text" name="phone" id="input-phone" class="form-control"/><br>
 
-            <label for="input-email">Email</label><br>
-            <input type="email" name="email" id="input-email" class="form-control"/><br>
+                <label for="input-email">Email</label><br>
+                <input type="email" name="email" id="input-email" class="form-control"/><br>
+            </div>
 
             <button type="submit" class="btn btn-primary">Register</button>
         </form>

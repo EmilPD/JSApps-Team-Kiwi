@@ -2,6 +2,11 @@
     <h1 id="main-title">Post free ad</h1>
     <div id="postad">
         <form id="post-ad-form">
+            <label for="select-ad-type">Select Ad Type</label><br>
+            <select id="select-ad-type" name="select_ad" class="form-control">
+                <option selected value="offer">Offer</option>
+                <option value="smallad">Small Ad</option>
+            </select><br>
             <label for="select-category">Select category</label><br>
             <select id="select-ad-category" name="select_category" class="form-control">
                 <option selected value="cars">Cars & Vehicles</option>
@@ -20,6 +25,11 @@
 
             <label for="ad-description">Description</label><br>
             <textarea rows="4" name="description" id="ad-description" class="form-control"></textarea><br>
+            
+            <div id="offer-info">
+                <label for="offer-price">Price</label><br>
+                <input type="text" name="price" id="offer-price" class="form-control"/><br>
+            </div>
 
             <button id="post-free-ad-btn" type="submit" class="btn btn-primary">Publish ad</button>
         </form>

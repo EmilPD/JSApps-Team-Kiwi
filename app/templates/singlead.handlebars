@@ -1,14 +1,41 @@
-
 <div class="container">
     <div class="col-xs-12">
         <article class="ad-single">
             <div class="ad-title" >{{result.title}}</div>
+            {{#if result.price}}
+                <div class="offer-price">Price: ${{result.price}}</div>
+            {{/if}}
             <div class="ad-description">{{result.description}}</div>
             <div class="ad-contact-info">
-                <div class="ad-contact-phone">{{result.phone}}</div>
-                <div class="ad-contact-email">{{result.email}}</div>
+                {{#if result.phone}}
+                    <div class="ad-contact-phone">{{result.phone}}</div>
+                {{/if}}
+                {{#if result.email}}
+                    <div class="ad-contact-email">{{result.email}}</div>
+                {{/if}}
             </div>
         </article>
+
+        <div id="comments">
+            <h2 id="comments-title">Comments</h2>
+            {{#result.comments}}
+                <div class="single-comment">
+                    <div class="comment-author"><strong>Author:</strong> {{author}}</div>
+                    <div class="comment-text">{{text}}</div>
+                </div>
+            {{/result.comments}}
+            <div id="add-new-comment">
+                <button id="add-new-comment-btn" type="submit">Add new comment</button>
+            </div>
+        </div>
+
+        <div id="comment-dialog" title="Your Comment:">
+            <form>
+				<textarea id="comment-text" rows="10" cols="60" placeholder="Type your comment here ..."></textarea><br/>
+                <input type="submit" id="submit-comment" value="Submit" />
+            </form>
+        </div>
+
         <div id="ad-single-bottom-container">
             <!--<a href="#" class="fb-share" >Share</a>-->
             <div class="fb-share-button" data-href="{{result.url}}/" data-layout="button" data-size="small" data-mobile-iframe="false"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkiwi-classifieds.herokuapp.com%2F&amp;src=sdkpreparse">Share</a></div>
