@@ -8,7 +8,7 @@ Name | TelerikAcademy user | GitHub user
 Денислав Стоянов | d3n1000 | denislav48
 Емил Димитров | qwerty123 | EmilPD
 
-<a href="https://kiwi-classifieds.herokuapp.com">App Live Demo</a>
+<h2><a href="https://kiwi-classifieds.herokuapp.com">App Live Demo</a></h2>
 <br>
 <div><strong>Project requirements</strong></div>
 <ol>
