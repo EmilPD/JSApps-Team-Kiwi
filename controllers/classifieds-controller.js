@@ -53,7 +53,8 @@ module.exports = function(db) {
         description: reqAd.description,
         phone: reqUser.phone,
         email: reqUser.email,
-        date: new Date()
+        date: new Date(),
+          url: `https://kiwi-classifieds.herokuapp.com/#/classifieds/${allClassifiedsCount + 1}`
       })
       .write();
 
