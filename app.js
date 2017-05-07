@@ -27,6 +27,7 @@ let classifiedsController = require('./controllers/classifieds-controller.js')(d
 app.get('/api/classifieds/count', classifiedsController.getCount);
 app.get('/api/classifieds/:id', classifiedsController.get);
 app.post('/api/classifieds/:category', classifiedsController.post);
+app.post('/api/comments/:id', classifiedsController.postComment);
 
 app.listen(process.env.PORT || 80, function () {
     console.log("App is running on port: 80");
