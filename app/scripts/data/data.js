@@ -64,7 +64,8 @@ let data = (function() {
         const body = {
             category: ad.category,
             title: ad.title,
-            description: ad.description
+            description: ad.description,
+            price: ad.price
         };
 
         const category = ad.category;
@@ -74,6 +75,19 @@ let data = (function() {
         };
 
         return requester.post(`/api/classifieds/${category}`, body, headers);
+    }
+
+    function postComment(comment) {
+        const body = {
+            id: comment.id,
+            text: comment.text
+        };
+
+        const headers = {
+            'kiwi-auth-key': localStorage.getItem(LOCALSTORAGE_AUTH_KEY_NAME)
+        };
+
+        return requester.post(`/api/comments/${comment.id}`, body, headers);
     }
 
     return {
@@ -87,6 +101,7 @@ let data = (function() {
             get: getCategory
         },
         classifieds: {
+            postComment: postComment,
             getCount: getCount,
             get: getAd,
             post: postAd
