@@ -98,19 +98,38 @@
 }
 
 #submit-comment {
-    background-color: #000;
+    font-weight: 700;
 }
 
 #comment-text {
     color: #000;
 }
 
+/*
+* BEGIN JQuery UI override
+* ------------------------------
+*/
+
+.ui-widget-header {
+    background: #d0caca;
+}
+
+.ui-dialog .ui-dialog-content {
+    background-color: #f2f2f2;
+}
+
 .ui-dialog-titlebar-close::before {
     content: "x";
     color: #000;
     position: relative;
-    top: -6px;
+    top: -4px;
 }
+
+/*
+* END JQuery UI override
+* ------------------------------
+*/
+
 
 /*
 * BEGIN Select fix for Firefox
@@ -273,6 +292,7 @@ footer {
 * ----------------------------
 */
 
+
 /* 
 * BEGIN Overriding Bootstrap styles 
 * ----------------------------
@@ -341,8 +361,6 @@ footer {
     .eq-height {
         display: block;
     }
-
-
 }
 
  /* 
