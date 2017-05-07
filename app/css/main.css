@@ -53,8 +53,67 @@
     padding: 2rem;
 }
 
+#comments {
+    background-color: #b7b7b7;
+    color: #fff;
+    padding: 2rem;
+    max-width: 60%;
+    margin: 0 auto 2rem;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+}
+
+.comment-text {
+    padding-left: 2rem;
+}
+
+.single-comment {
+    padding: 1rem 2rem 2rem;
+}
+
+.single-comment:nth-child(even) {
+    background-color: #8f8b92;
+}
+
+.single-comment:nth-child(odd) {
+    background-color: #6d6d6d;
+}
+
+#add-new-comment {
+    text-align: right;
+    padding: 1rem 0 0;
+}
+
+#add-new-comment-btn {
+    background-color: #f8f8ff;
+    color: #000;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+#comments-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 1.3rem;
+    text-align: center;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+
+#submit-comment {
+    background-color: #000;
+}
+
+#comment-text {
+    color: #000;
+}
+
+.ui-dialog-titlebar-close::before {
+    content: "x";
+    color: #000;
+    position: relative;
+    top: -6px;
+}
+
 /*
-* BEGIN Select fix 
+* BEGIN Select fix for Firefox
 * ------------------------------
 */
 
@@ -66,12 +125,13 @@ select {
     text-overflow: '';
 }
 
-select::-ms-expand {
-    display: none;
+select#user-type,
+select#select-ad-type {
+    background: url("../images/select-arrow.png") no-repeat center right !important;
 }
 
 /*
-* END Select fix 
+* END Select fix for Firefox
 * -----------------------------
 */
 
@@ -174,6 +234,15 @@ select::-ms-expand {
 
 #ad-single-bottom-container {
     text-align: center;
+    margin-bottom: 2rem;
+}
+
+.offer-price {
+    display: inline-block;
+    padding: 0.2rem 1rem;
+    border: 1px solid;
+    border-radius: 7%;
+    font-weight: 700;
 }
 
 .nav-back,
