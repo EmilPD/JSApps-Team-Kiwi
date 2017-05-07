@@ -1,6 +1,6 @@
 import { TemplateController } from './controllers/template-controller.js';
 
-var router = (() => {
+let router = (() => {
     let navigo,
         controller;
 
@@ -46,8 +46,15 @@ var router = (() => {
             'classifieds/:id': (params) => {
                 console.log('classifieds from router - classifieds Id: ' + params.id);
                 controller.loadAd(params.id);
-            },
+            }
         }).resolve();
+
+        // navigo.notFound(() => {
+        //     Promise.all([tl.loadTemplate('pageNotFound')])
+        //         .then(([template]) => $('#container').html(template(template)))
+        //         .catch(console.log);
+        // });
+        
     }
     return {
         init
