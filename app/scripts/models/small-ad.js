@@ -1,21 +1,11 @@
 import { validator } from '../utils/validator.js';
+import { Ad } from './ad.js';
 
 let SmallAd = (function() {
-    class SmallAd {
+    class SmallAd extends Ad {
         constructor(title, description) {
-            this.title = title;
+            super(title)
             this.description = description;
-        }
-
-        get title() {
-            return this._title;
-        }
-
-        set title(value) {
-            validator.validateIfUndefinedOrNull(value, 'Title');
-            validator.validateTypeOf(value, 'Title', 'string');
-            validator.validateIfEmptyString(value, 'Title');
-            this._title = value;
         }
 
         get description() {

@@ -1,25 +1,12 @@
 import { validator } from '../utils/validator.js';
-//const validator = require('../utils/validator.js');
+import { Person } from './person.js';
 
 let User = (function() {
-    class User {
-        constructor(name, username, password, phone, email) {
-            this.name = name;
+    class User extends Person {
+        constructor(name, username, password) {
+            super(name);
             this.username = username;
             this.password = password;
-            this.phone = phone;
-            this.email = email;
-        }
-
-        get name() {
-            return this._name;
-        }
-
-        set name(value) {
-            validator.validateIfUndefinedOrNull(value, 'Name');
-            validator.validateTypeOf(value, 'Name', 'string');
-            validator.validateIfEmptyString(value, 'Name');
-            this._name = value;
         }
 
         get username() {
@@ -42,28 +29,6 @@ let User = (function() {
             validator.validatePassword(value);
             validator.validateIfEmptyString(value, 'Password');
             this._password = value;
-        }
-
-        get phone() {
-            return this._phone;
-        }
-
-        set phone(value) {
-            validator.validateIfUndefinedOrNull(value, 'Phone');
-            validator.validatePhone(value);
-            validator.validateIfEmptyString(value, 'Phone');
-            this._phone = value;
-        }
-
-        get email() {
-            return this._email;
-        }
-
-        set email(value) {
-            validator.validateIfUndefinedOrNull(value, 'Email');
-            validator.validateEmail(value);
-            validator.validateIfEmptyString(value, 'Email');
-            this._email = value;
         }
     }
 
