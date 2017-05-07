@@ -59,18 +59,31 @@ module.exports = function(db) {
     let userCount = db.get('users')
       .value()
       .length;
-    
-    db.get('users')
+
+    if (typeof reqUser.phone === 'undefined' && typeof reqUser.email === 'undefined') {
+      db.get('users')
       .push({
         id: userCount + 1,
+        status: 'normal',
+        name: reqUser.name,
+        username: reqUser.username,
+        passHash: passHash
+      })
+      .write();
+    }
+    else {
+      db.get('users')
+      .push({
+        id: userCount + 1,
+        status: 'vip',
         name: reqUser.name,
         username: reqUser.username,
         passHash: passHash,
         phone: reqUser.phone,
-        email: reqUser.email,
-
+        email: reqUser.email
       })
       .write();
+    }
       
     res.status(201)
       .json({
@@ -92,7 +105,6 @@ module.exports = function(db) {
       return;
     }
     const passHash = CryptoJS.SHA1(reqUser.username + reqUser.password).toString();
-    console.log(reqUser.username, reqUser.password, passHash);
     if (user.passHash !== passHash) {
       res.status(404)
         .json('Invalid password');

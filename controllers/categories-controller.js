@@ -7,6 +7,7 @@ module.exports = function(db) {
 
     if (categoryName === 'all') {
       var category = _.chain(db.get('categories'))
+        .sortBy('date')
         .value();
     } 
     else {
