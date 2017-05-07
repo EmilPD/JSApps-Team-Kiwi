@@ -37,8 +37,14 @@
         </div>
 
         <div id="ad-single-bottom-container">
-            <!--<a href="#" class="fb-share" >Share</a>-->
-            <div class="fb-share-button" data-href="{{result.url}}/" data-layout="button" data-size="small" data-mobile-iframe="false"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkiwi-classifieds.herokuapp.com%2F&amp;src=sdkpreparse">Share</a></div>
+            <!--<a href="#" class="fb-share" >Share</a>
+            <div class="fb-share-button" data-href="{{result.url}}/" data-layout="button" data-size="small" data-mobile-iframe="false"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkiwi-classifieds.herokuapp.com%2F&amp;src=sdkpreparse">Share</a></div>-->
+            <a title="Share on Facebook"
+            href="https://www.facebook.com/sharer.php?caption={{result.title}}&description={{result.description}}&u=https%3A%2F%2Fkiwi-classifieds.herokuapp.com%2F%23%2Fclassifieds%2F{{result.id}}&picture=https://kiwi-classifieds.herokuapp.com/images/logo-kiwi-square.png"
+            target="_blank">
+            <!--https://www.facebook.com/sharer.php?caption={{result.title}}&description={{result.description}}&u=https%3A%2F%2Fkiwi-classifieds.herokuapp.com%2F%23%2Fclassifieds%2F{{result.id}}&picture=[image-url]-->
+                <img width="50" height="22" src="../images/fb.png" alt="Facebook" />
+            </a>
             <a href="#" class="nav-back" onclick="window.history.back()">Go Back</a>
         </div>
     </div>
