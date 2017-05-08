@@ -2,7 +2,7 @@ import { requester } from '../requester.js';
 
 let data = (function() {
     const LOCALSTORAGE_AUTH_KEY_NAME = 'kiwi-auth-key';
-    const LOCAL_STORAGE_USERNAME_KEY = 'kiwi-username-key';
+    const LOCALSTORAGE_USER_NAME_KEY = 'kiwi-user-name-key';
 
     // Users
 
@@ -16,7 +16,7 @@ let data = (function() {
             .then(function(resp) {
                 let user = resp.result;
                 localStorage.setItem(LOCALSTORAGE_AUTH_KEY_NAME, user.authKey);
-                localStorage.setItem(LOCAL_STORAGE_USERNAME_KEY, user.name);
+                localStorage.setItem(LOCALSTORAGE_USER_NAME_KEY, user.name);
                 return user;
             });
     }
@@ -36,7 +36,7 @@ let data = (function() {
     function logout() {
         let promise = new Promise(function(resolve, reject) {
             localStorage.removeItem(LOCALSTORAGE_AUTH_KEY_NAME);
-            localStorage.removeItem(LOCAL_STORAGE_USERNAME_KEY);
+            localStorage.removeItem(LOCALSTORAGE_USER_NAME_KEY);
             resolve();
         });
 
@@ -44,11 +44,12 @@ let data = (function() {
     }
 
     function hasUser() {
-        return !!localStorage.getItem(LOCALSTORAGE_AUTH_KEY_NAME)
+        return !!localStorage.getItem(LOCALSTORAGE_AUTH_KEY_NAME) &&
+            !!localStorage.getItem(LOCALSTORAGE_USER_NAME_KEY);
     }
 
     function getUser() {
-        return localStorage.getItem(LOCAL_STORAGE_USERNAME_KEY);
+        return localStorage.getItem(LOCALSTORAGE_USER_NAME_KEY);
     }
 
     // Categories

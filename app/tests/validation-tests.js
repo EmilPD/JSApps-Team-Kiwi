@@ -1,4 +1,4 @@
-import { validator } from '../app/scripts/utils/validator';
+import { validator } from '../scripts/utils/validator';
 
 describe('Validation tests', function() {
     let undefinedName; // Undefined argument

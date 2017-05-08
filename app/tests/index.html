@@ -17,13 +17,14 @@
     <script src="/libs/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/libs/navigo/lib/navigo.js"></script>
     <script src="/libs/toastr/build/toastr.min.js"></script>
+    <script src="/libs/systemjs/dist/system.js"></script>
+    <script src="/scripts/system-config.js"></script>
 
     <!-- Testing Libs -->
     <script src="/libs/mocha/mocha.js"></script>
     <script src="/libs/chai/chai.js"></script>
     <script src="/libs/sinon/pkg/sinon.js"></script>
-    <script src="/libs/systemjs/dist/system.js"></script>
-    <script src="/scripts/system-config.js"></script>
+    <script src="/libs/sinon-chai/lib/sinon-chai.js"></script>
 
     <!-- Unit tests -->
     <script>
@@ -31,7 +32,8 @@
         const { expect } = chai;
 
         Promise.all([
-            System.import('../tests/validation-tests.js')
+            System.import('validation-tests.js'),
+            System.import('users-tests.js')
         ])
         .then(() => mocha.run());
     </script>
