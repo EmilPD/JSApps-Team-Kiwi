@@ -1,17 +1,18 @@
-var _ = require('lodash');
+let _ = require('lodash');
 
 module.exports = function(db) {
 
   function get(req, res) {
     let categoryName = req.params.categoryName;
+    let category
 
     if (categoryName === 'all') {
-      var category = _.chain(db.get('categories'))
+      category = _.chain(db.get('categories'))
         .sortBy('date')
         .value();
     } 
     else {
-      var category = _.chain(db.get('categories'))
+      category = _.chain(db.get('categories'))
         .find({ shortname: categoryName })
         .value();
     }
