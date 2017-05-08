@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiwi Classifieds SPA Tests</title>
+    <link rel="stylesheet" href="/libs/mocha/mocha.css" />
+</head>
+
+<body>
+    <div id="mocha"></div>
+
+    <!-- Libs -->
+    <script src="/libs/handlebars/dist/handlebars.js"></script>
+    <script src="/libs/jquery/dist/jquery.js"></script>
+    <script src="/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/libs/navigo/lib/navigo.js"></script>
+
+    <!-- Testing Libs -->
+    <script src="/libs/mocha/mocha.js"></script>
+    <script src="/libs/chai/chai.js"></script>
+    <script src="/libs/sinon/pkg/sinon.js"></script>
+    <script src="/libs/systemjs/dist/system.js"></script>
+    <script src="/scripts/system-config.js"></script>
+
+    <!-- Unit tests -->
+    <script>
+        mocha.setup('bdd');
+        const { expect } = chai;
+
+        Promise.all([
+            System.import('../tests/validation-tests.js')
+        ])
+        .then(() => mocha.run());
+    </script>
+</body>
+
+</html>
