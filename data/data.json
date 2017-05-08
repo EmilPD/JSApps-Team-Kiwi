@@ -1,313 +1,313 @@
 {
   "categories": [
     {
-	  "id": 1,
+      "id": 1,
       "shortname": "cars",
       "name": "Cars & Vehicles",
       "ads": [
         {
           "id": 1,
-		  "categoryid": 1,
+          "categoryid": 1,
           "title": "Cars",
           "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
           "phone": "0899998989",
           "email": "sdsds@asdsad.bg",
-		  "comments": []
+          "comments": []
         },
         {
           "id": 2,
-		  "categoryid": 1,
+          "categoryid": 1,
           "title": "Cars",
           "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
           "phone": "0899998989",
           "email": "sdsds@asdsad.bg",
-		  "comments": []
+          "comments": []
         },
         {
           "id": 3,
-		  "categoryid": 1,
+          "categoryid": 1,
           "title": "Cars",
           "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
           "phone": "0899998989",
           "email": "sdsds@asdsad.bg",
-		  "comments": []
+          "comments": []
         }
       ]
     },
     {
-	  "id": 2,
+      "id": 2,
       "shortname": "property",
       "name": "Property",
       "ads": [
         {
-		  "categoryid": 2,
+          "categoryid": 2,
           "id": 5,
           "title": "Property",
           "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
           "phone": "0899998989",
           "email": "sdsds@asdsad.bg",
-		  "comments": []
+          "comments": []
         },
         {
-		  "categoryid": 2,
+          "categoryid": 2,
           "id": 6,
           "title": "Property",
           "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
           "phone": "0899998989",
           "email": "sdsds@asdsad.bg",
-		  "comments": []
+          "comments": []
         },
         {
-		  "categoryid": 2,
+          "categoryid": 2,
           "id": 7,
           "title": "Property",
           "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
           "phone": "0899998989",
           "email": "sdsds@asdsad.bg",
-		  "comments": []
+          "comments": []
         }
       ]
     },
     {
-	  "id": 3,
+      "id": 3,
       "shortname": "hobbies",
       "name": "Hobbies",
       "ads": [
         {
-		  "categoryid": 3,
+          "categoryid": 3,
           "id": 8,
           "title": "Hobbies",
           "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
           "phone": "0899998989",
           "email": "sdsds@asdsad.bg",
-		  "comments": []
+          "comments": []
         },
         {
-		  "categoryid": 3,
+          "categoryid": 3,
           "id": 9,
           "title": "Hobbies",
           "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
           "phone": "0899998989",
           "email": "sdsds@asdsad.bg",
-		  "comments": []
+          "comments": []
         },
         {
-		  "categoryid": 3,
+          "categoryid": 3,
           "id": 10,
           "title": "Hobbies",
           "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
           "phone": "0899998989",
           "email": "sdsds@asdsad.bg",
-		  "comments": []
+          "comments": []
         }
       ]
     },
     {
-	  "id": 4,
+      "id": 4,
       "shortname": "pets",
       "name": "Pets & Animals",
       "ads": [
         {
-		  "categoryid": 4,
+          "categoryid": 4,
           "id": 11,
           "title": "Pets",
           "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
           "phone": "0899998989",
           "email": "sdsds@asdsad.bg",
-		  "comments": []
+          "comments": []
         },
         {
-		  "categoryid": 4,
+          "categoryid": 4,
           "id": 12,
           "title": "Pets",
           "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
           "phone": "0899998989",
           "email": "sdsds@asdsad.bg",
-		  "comments": []
+          "comments": []
         },
         {
-		  "categoryid": 4,
+          "categoryid": 4,
           "id": 13,
           "title": "Pets",
           "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
           "phone": "0899998989",
           "email": "sdsds@asdsad.bg",
-		  "comments": []
+          "comments": []
         }
       ]
     },
     {
-	  "id": 5,
+      "id": 5,
       "shortname": "homegarden",
       "name": "Home & Garden",
       "ads": [
         {
-		  "categoryid": 5,
+          "categoryid": 5,
           "id": 14,
           "title": "Home & Garden",
           "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
           "phone": "0899998989",
           "email": "sdsds@asdsad.bg",
-		  "comments": []
+          "comments": []
         },
         {
-		  "categoryid": 5,
+          "categoryid": 5,
           "id": 15,
           "title": "Home & Garden",
           "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
           "phone": "0899998989",
           "email": "sdsds@asdsad.bg",
-		  "comments": []
+          "comments": []
         },
         {
-		  "categoryid": 5,
+          "categoryid": 5,
           "id": 16,
           "title": "Home & Garden",
           "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
           "phone": "0899998989",
           "email": "sdsds@asdsad.bg",
-		  "comments": []
+          "comments": []
         }
       ]
     },
     {
-	  "id": 6,
+      "id": 6,
       "shortname": "electronics",
       "name": "Electronics",
       "ads": [
         {
-		  "categoryid": 6,
+          "categoryid": 6,
           "id": 17,
           "title": "Electronics",
           "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
           "phone": "0899998989",
           "email": "sdsds@asdsad.bg",
-		  "comments": []
+          "comments": []
         },
         {
-		  "categoryid": 6,
+          "categoryid": 6,
           "id": 18,
           "title": "Electronics",
           "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
           "phone": "0899998989",
           "email": "sdsds@asdsad.bg",
-		  "comments": []
+          "comments": []
         },
         {
-		  "categoryid": 6,
+          "categoryid": 6,
           "id": 19,
           "title": "Electronics",
           "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
           "phone": "0899998989",
           "email": "sdsds@asdsad.bg",
-		  "comments": []
+          "comments": []
         }
       ]
     },
     {
-	  "id": 7,
+      "id": 7,
       "shortname": "services",
       "name": "Services",
       "ads": [
         {
-		  "categoryid": 7,
+          "categoryid": 7,
           "id": 20,
           "title": "Services",
           "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
           "phone": "0899998989",
           "email": "sdsds@asdsad.bg",
-		  "comments": []
+          "comments": []
         },
         {
-		  "categoryid": 7,
+          "categoryid": 7,
           "id": 21,
           "title": "Services",
           "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
           "phone": "0899998989",
           "email": "sdsds@asdsad.bg",
-		  "comments": []
+          "comments": []
         },
         {
-		  "categoryid": 7,
+          "categoryid": 7,
           "id": 22,
           "title": "Services",
           "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
           "phone": "0899998989",
           "email": "sdsds@asdsad.bg",
-		  "comments": []
+          "comments": []
         }
       ]
     },
     {
-	  "id": 8,
+      "id": 8,
       "shortname": "fashion",
       "name": "Fashion & Beauty",
       "ads": [
         {
-		  "categoryid": 8,
+          "categoryid": 8,
           "id": 23,
           "title": "Fashion & Beauty",
           "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
           "phone": "0899998989",
           "email": "sdsds@asdsad.bg",
-		  "comments": []
+          "comments": []
         },
         {
-		  "categoryid": 8,
+          "categoryid": 8,
           "id": 24,
           "title": "Fashion & Beauty",
           "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
           "phone": "0899998989",
           "email": "sdsds@asdsad.bg",
-		  "comments": []
+          "comments": []
         },
         {
-		  "categoryid": 8,
+          "categoryid": 8,
           "id": 25,
           "title": "Fashion & Beauty",
           "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
           "phone": "0899998989",
           "email": "sdsds@asdsad.bg",
-		  "comments": []
+          "comments": []
         }
       ]
     },
     {
-	  "id": 9,
+      "id": 9,
       "shortname": "jobs",
       "name": "Jobs",
       "ads": [
         {
-		  "categoryid": 9,
+          "categoryid": 9,
           "id": 26,
           "title": "Jobs",
           "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
           "phone": "0899998989",
           "email": "sdsds@asdsad.bg",
-		  "comments": []
+          "comments": []
         },
         {
-		  "categoryid": 9,
+          "categoryid": 9,
           "id": 27,
           "title": "Jobs",
           "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
           "phone": "0899998989",
           "email": "sdsds@asdsad.bg",
-		  "comments": []
+          "comments": []
         },
         {
-		  "categoryid": 9,
+          "categoryid": 9,
           "id": 28,
           "title": "Jobs",
           "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab nobis, ut non animi eius alias similique quisquam commodi, a, optio voluptatum. Vel magni quibusdam omnis expedita tempora fugit quam.",
           "phone": "0899998989",
           "email": "sdsds@asdsad.bg",
-		  "comments": []
+          "comments": []
         }
       ]
     }
   ],
   "users": [
-	
+    
   ]
 }
