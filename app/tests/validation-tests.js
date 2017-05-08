@@ -12,9 +12,9 @@ describe('Validation tests', function() {
     const validPhone = '0898998877';
     const inValidPhone = '230-34_23';
     const validUsername = 'user1';
-    const inValidUsername = '@dsan_';
+    const inValidUsername = 'dan'; // Valid Username must be at least 4 symbols
     const validPassword = 'dandan13';
-    const inValidPassword = 'dandandan'; // Valid Password must have at least 1 digit
+    const inValidPassword = 'dandand'; // Valid Password must be at least 8 symbols
 
     describe('String validation tests', () => {
 
@@ -86,8 +86,12 @@ describe('Validation tests', function() {
             expect(() => validator.validateUsername(validUsername)).to.not.throw();
         });
         
-        it('validateUsername should throw when invalid Username is provided', function() {
+        it('validateUsername should throw when short Username is provided', function() {
             expect(() => validator.validateUsername(inValidUsername)).to.throw();
+        });
+
+        it('validateUsername should throw when Username contain invalid symbols is provided', function() {
+            expect(() => validator.validateUsername(inValidUsername + '@$')).to.throw();
         });
 
     });
@@ -98,8 +102,12 @@ describe('Validation tests', function() {
             expect(() => validator.validatePassword(validPassword)).to.not.throw();
         });
         
-        it('validatePassword should throw when invalid Password is provided', function() {
+        it('validatePassword should throw when short Password is provided', function() {
             expect(() => validator.validatePassword(inValidPassword)).to.throw();
+        });
+
+        it('validatePassword should throw when Password with invalid symbols is provided', function() {
+            expect(() => validator.validatePassword(inValidPassword + '1@')).to.throw();
         });
 
     });
