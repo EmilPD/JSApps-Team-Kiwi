@@ -17,12 +17,6 @@ const validator = {
             throw new Error(property + ' is undefined or null');
         }
     },
-    validateIsInstanceOf: (value, property, type) => {
-        if (!(value instanceof type)) {
-            toastr.error(property + ' is not an instance of ' + type);
-            throw new Error(property + ' is not an instance of ' + type);
-        }
-    },
     validateEmail: (email) => {
         let regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         if (!regex.test(email)) {
