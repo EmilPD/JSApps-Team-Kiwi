@@ -23,7 +23,7 @@ describe('Validation tests', function() {
         });
 
         it('validateIfEmptyString should throw when empty string is provided', function() {
-            expect(() => validator.validateIfEmptyString('')).to.throw();
+            expect(() => validator.validateIfEmptyString('')).to.throw(/is Empty/);
         });
 
     });
@@ -35,7 +35,7 @@ describe('Validation tests', function() {
         });
 
         it('validateTypeOf should throw when the argument provided is of different than expected Type', function() {
-            expect(() => validator.validateTypeOf(name, property, typeArray)).to.throw();
+            expect(() => validator.validateTypeOf(name, property, typeArray)).to.throw(/is not of type/);
         });
 
     });
@@ -47,11 +47,11 @@ describe('Validation tests', function() {
         });
 
         it('validateIfUndefinedOrNull should throw when the argument provided is undefined', function() {
-            expect(() => validator.validateIfUndefinedOrNull(undefinedName, property)).to.throw();
+            expect(() => validator.validateIfUndefinedOrNull(undefinedName, property)).to.throw(/is undefined or null/);
         });
 
         it('validateIfUndefinedOrNull should throw when the argument provided is null', function() {
-            expect(() => validator.validateIfUndefinedOrNull(null, property)).to.throw();
+            expect(() => validator.validateIfUndefinedOrNull(null, property)).to.throw(/is undefined or null/);
         });
 
     });
@@ -63,7 +63,7 @@ describe('Validation tests', function() {
         });
         
         it('validateEmail should throw when invalid Email is provided', function() {
-            expect(() => validator.validateEmail(inValidEmail)).to.throw();
+            expect(() => validator.validateEmail(inValidEmail)).to.throw(/Invalid Email/);
         });
 
     });
@@ -75,7 +75,7 @@ describe('Validation tests', function() {
         });
         
         it('validatePhone should throw when invalid Phone is provided', function() {
-            expect(() => validator.validatePhone(inValidPhone)).to.throw();
+            expect(() => validator.validatePhone(inValidPhone)).to.throw(/Invalid Phone/);
         });
 
     });
@@ -87,11 +87,11 @@ describe('Validation tests', function() {
         });
         
         it('validateUsername should throw when short Username is provided', function() {
-            expect(() => validator.validateUsername(inValidUsername)).to.throw();
+            expect(() => validator.validateUsername(inValidUsername)).to.throw(/Username must be at least 4 symbols and all should be valid/);
         });
 
         it('validateUsername should throw when Username contain invalid symbols is provided', function() {
-            expect(() => validator.validateUsername(inValidUsername + '@$')).to.throw();
+            expect(() => validator.validateUsername(inValidUsername + '@$')).to.throw(/Username must be at least 4 symbols and all should be valid/);
         });
 
     });
@@ -103,11 +103,11 @@ describe('Validation tests', function() {
         });
         
         it('validatePassword should throw when short Password is provided', function() {
-            expect(() => validator.validatePassword(inValidPassword)).to.throw();
+            expect(() => validator.validatePassword(inValidPassword)).to.throw(/Password has to be Minimum 8 characters at least 1 Alphabet and 1 Number/);
         });
 
         it('validatePassword should throw when Password with invalid symbols is provided', function() {
-            expect(() => validator.validatePassword(inValidPassword + '1@')).to.throw();
+            expect(() => validator.validatePassword(inValidPassword + '1@')).to.throw(/Password has to be Minimum 8 characters at least 1 Alphabet and 1 Number/);
         });
 
     });
