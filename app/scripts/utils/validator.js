@@ -39,10 +39,10 @@ const validator = {
         }
     },
     validateUsername: (username) => {
-        let regex = /^[A-Za-z0-9_-]*[A-Za-z0-9][A-Za-z0-9_-]*$/;
+        let regex = /^[A-Za-z0-9_-]*[A-Za-z0-9][A-Za-z0-9_-]{3,}$/;
         if (!regex.test(username)) {
-            toastr.error('Username contain invalid symbols');
-            throw new Error('Username contain invalid symbols');
+            toastr.error('Username must be at least 4 symbols and all should be valid');
+            throw new Error('Username must be at least 4 symbols and all should be valid');
         }
     }
 };
