@@ -215,4 +215,18 @@ describe('Users tests', () => {
 
     });
 
+    describe('getUser tests', () => {
+
+        it('expect getUser() to return null when no one is logged in', () => {
+            expect(data.users.getUser()).to.be.null;
+        });
+
+        it('expect getUser() to return user name when it is available in localStorage', () => {
+            const name = 'dandan';
+            localStorage.setItem(LOCALSTORAGE_USER_NAME_KEY, name);
+            expect(data.users.getUser()).to.equal(name);
+        });
+
+    });
+
 });
