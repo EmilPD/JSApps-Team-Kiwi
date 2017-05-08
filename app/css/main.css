@@ -105,6 +105,10 @@
     color: #000;
 }
 
+#share-btn {
+    text-decoration: none;
+}
+
 /*
 * BEGIN JQuery UI override
 * ------------------------------
@@ -309,6 +313,38 @@ footer {
 .btn {
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #5f9ea0;
+    border-color: #6495ed;
+}
+
+.btn-success:hover,
+.btn-success.focus, 
+.btn-success:focus,
+.btn-success.active, 
+.btn-success:active,
+.btn-success.active.focus, 
+.btn-success.active:focus, 
+.btn-success:active.focus, 
+.btn-success:active:focus, 
+.btn-success:active:hover,
+.btn-success.active:hover,
+.open>.dropdown-toggle.btn-success.focus, 
+.open>.dropdown-toggle.btn-success:focus, 
+.open>.dropdown-toggle.btn-success:hover,
+.open>.dropdown-toggle.btn-success,
+.open>.dropdown-toggle.btn-success
+ {
+    color: #fff;
+    background-color: #4a8a8c;
+    border-color: #3a5990;
+}
+
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 180px;
 }
 
 /* 
