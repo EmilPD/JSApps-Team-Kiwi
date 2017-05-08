@@ -13,7 +13,7 @@ let data = (function() {
 
         return requester.put('/api/auth/login', body)
             .then(function(resp) {
-                var user = resp.result;
+                let user = resp.result;
                 localStorage.setItem(LOCALSTORAGE_AUTH_KEY_NAME, user.authKey);
                 return user;
             });
