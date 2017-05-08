@@ -11,7 +11,6 @@ describe('Users tests', () => {
     };
 
     let requesterPostStub;
-    const passHash = 'qwerty_pass_hash'; // dali da se trie
 
     const user = {
             name: 'dandan',

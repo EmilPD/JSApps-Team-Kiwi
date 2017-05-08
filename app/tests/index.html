@@ -33,7 +33,9 @@
 
         Promise.all([
             System.import('validation-tests.js'),
-            System.import('users-tests.js')
+            System.import('users-tests.js'),
+            System.import('categories-tests.js'),
+            System.import('classifieds-tests.js'),
         ])
         .then(() => mocha.run());
     </script>
