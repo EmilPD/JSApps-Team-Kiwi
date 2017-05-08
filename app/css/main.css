@@ -105,6 +105,10 @@
     color: #000;
 }
 
+#share-btn {
+    text-decoration: none;
+}
+
 /*
 * BEGIN JQuery UI override
 * ------------------------------
