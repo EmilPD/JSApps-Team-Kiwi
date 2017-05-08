@@ -12,7 +12,7 @@ const validator = {
         }
     },
     validateIfUndefinedOrNull: (value, property) => {
-        if (value === undefined || value === null) {
+        if (typeof value === 'undefined' || value === null) {
             toastr.error(property + ' is undefined or null');
             throw new Error(property + ' is undefined or null');
         }
