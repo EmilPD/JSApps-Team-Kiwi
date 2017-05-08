@@ -48,11 +48,10 @@ let router = (() => {
             }
         }).resolve();
 
-        // navigo.notFound(() => {
-        //     Promise.all([tl.loadTemplate('pageNotFound')])
-        //         .then(([template]) => $('#container').html(template(template)))
-        //         .catch(console.log);
-        // });
+        navigo.notFound(() => {
+            console.log('notFound from router');
+            controller.loadPageNotFound();
+        }).resolve();
         
     }
     return {

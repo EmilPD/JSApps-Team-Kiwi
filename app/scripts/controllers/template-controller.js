@@ -268,6 +268,12 @@ let TemplateController = (function() {
             })
             
         }
+
+        loadPageNotFound() {
+            Promise.all([tl.loadTemplate('pagenotfound')])
+                .then((template) => $('#main').html(template))
+                .catch(console.log);
+        }
     }
 
     return TemplateController;
