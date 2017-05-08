@@ -38,8 +38,7 @@ let router = (() => {
                 if (params.categoryName === 'all') {
                     console.log('home from category all');
                     controller.loadHome();
-                }
-                else {
+                } else {
                     controller.loadCategory(params.categoryName);
                 }
             },

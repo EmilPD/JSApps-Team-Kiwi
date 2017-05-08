@@ -68,16 +68,14 @@ let TemplateController = (function() {
                         let userType = $('#user-type').val;
                         if (userType === 'normal') {
                             $('#vip-user-info').addClass('hidden');
-                        }
-                        else if (userType === 'vip') {
+                        } else if (userType === 'vip') {
                             $('#vip-user-info').removeClass('hidden');
                         }
                         $('#user-type').change(function () {
                             userType = $(this).val();
                             if (userType === 'normal') {
                                 $('#vip-user-info').addClass('hidden');
-                            }
-                            else if (userType === 'vip') {
+                            } else if (userType === 'vip') {
                                 $('#vip-user-info').removeClass('hidden');
                             }
                         });
@@ -95,8 +93,7 @@ let TemplateController = (function() {
                         let newUser;
                         if (userType == 'normal') {
                             newUser = new User(name, username, password);
-                        }
-                        else if (userType == 'vip') {
+                        } else if (userType == 'vip') {
                             newUser = new VIPUser(name, username, password, phone, email);
                         }
                         
@@ -134,8 +131,7 @@ let TemplateController = (function() {
                 toastr.error('You are not logged in');
                 location.href = '#/login';
                 return;
-            }
-            else {
+            } else {
                 this.hideLoginRegister();
             }
 
@@ -147,16 +143,14 @@ let TemplateController = (function() {
                     let adType = $('#select-ad-type').val;
                         if (adType === 'smallad') {
                             $('#offer-info').addClass('hidden');
-                        }
-                        else if (adType === 'offer') {
+                        } else if (adType === 'offer') {
                             $('#offer-info').removeClass('hidden');
                         }
                         $('#select-ad-type').change(function () {
                             adType = $(this).val();
                             if (adType === 'smallad') {
                                 $('#offer-info').addClass('hidden');
-                            }
-                            else if (adType === 'offer') {
+                            } else if (adType === 'offer') {
                                 $('#offer-info').removeClass('hidden');
                             }
                         });
@@ -180,8 +174,7 @@ let TemplateController = (function() {
                                 title: Ad.title,
                                 description: Ad.description
                             }
-                        }
-                        else if (adType === 'offer') {
+                        } else if (adType === 'offer') {
                             Ad = new Offer(title, description, price);
                             console.log('Ad offer', Ad);
                             newAd = {

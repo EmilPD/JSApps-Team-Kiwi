@@ -70,8 +70,7 @@ module.exports = function(db) {
         passHash: passHash
       })
       .write();
-    }
-    else {
+    } else {
       db.get('users')
       .push({
         id: userCount + 1,

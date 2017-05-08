@@ -62,8 +62,7 @@ module.exports = function(db) {
           date: new Date()
         })
         .write();
-      }
-      else {
+      } else {
         db.get('categories')
         .find({ shortname: categoryName })
         .get('ads')
@@ -79,8 +78,7 @@ module.exports = function(db) {
         .write();
       }
       
-    }
-    else {
+    } else {
       if (typeof price === 'undefined') {
         db.get('categories')
           .find({ shortname: categoryName })
@@ -96,8 +94,7 @@ module.exports = function(db) {
             date: new Date()
           })
           .write();
-      }
-      else {
+      } else {
         db.get('categories')
           .find({ shortname: categoryName })
           .get('ads')

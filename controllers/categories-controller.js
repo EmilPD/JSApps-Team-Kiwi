@@ -10,8 +10,7 @@ module.exports = function(db) {
       category = _.chain(db.get('categories'))
         .sortBy('date')
         .value();
-    } 
-    else {
+    } else {
       category = _.chain(db.get('categories'))
         .find({ shortname: categoryName })
         .value();
