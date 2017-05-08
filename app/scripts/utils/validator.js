@@ -20,7 +20,6 @@ const validator = {
     validateEmail: (email) => {
         let regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         if (!regex.test(email)) {
-            console.log('regex.test.email ' + regex.test(email));
             toastr.error('Invalid Email');
             throw new Error('Invalid Email');
         }
@@ -28,7 +27,6 @@ const validator = {
     validatePhone: (phone) => {
         let regex = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
         if (!regex.test(phone)) {
-            console.log('regex.test.phone ' + regex.test(phone));
             toastr.error('Invalid Phone');
             throw new Error('Invalid Phone');
         }
@@ -36,7 +34,6 @@ const validator = {
     validatePassword: (password) => {
         let regex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
         if (!regex.test(password)) {
-            console.log('regex.test.password ' + regex.test(password));
             toastr.error('Password has to be Minimum 8 characters at least 1 Alphabet and 1 Number');
             throw new Error('Password has to be Minimum 8 characters at least 1 Alphabet and 1 Number');
         }
@@ -44,7 +41,6 @@ const validator = {
     validateUsername: (username) => {
         let regex = /^[A-Za-z0-9_-]*[A-Za-z0-9][A-Za-z0-9_-]*$/;
         if (!regex.test(username)) {
-            console.log('regex.test.username ' + regex.test(username));
             toastr.error('Username contain invalid symbols');
             throw new Error('Username contain invalid symbols');
         }
