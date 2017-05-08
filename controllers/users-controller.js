@@ -116,6 +116,7 @@ module.exports = function(db) {
 
     res.json({
       result: {
+        name: user.name,
         username: user.username,
         authKey: user.authKey
       }

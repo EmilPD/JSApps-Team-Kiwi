@@ -2,6 +2,7 @@ import { requester } from '../requester.js';
 
 let data = (function() {
     const LOCALSTORAGE_AUTH_KEY_NAME = 'kiwi-auth-key';
+    const LOCAL_STORAGE_USERNAME_KEY = 'kiwi-username-key';
 
     // Users
 
@@ -15,6 +16,7 @@ let data = (function() {
             .then(function(resp) {
                 let user = resp.result;
                 localStorage.setItem(LOCALSTORAGE_AUTH_KEY_NAME, user.authKey);
+                localStorage.setItem(LOCAL_STORAGE_USERNAME_KEY, user.name);
                 return user;
             });
     }
@@ -34,6 +36,7 @@ let data = (function() {
     function logout() {
         let promise = new Promise(function(resolve, reject) {
             localStorage.removeItem(LOCALSTORAGE_AUTH_KEY_NAME);
+            localStorage.removeItem(LOCAL_STORAGE_USERNAME_KEY);
             resolve();
         });
 
@@ -41,7 +44,11 @@ let data = (function() {
     }
 
     function hasUser() {
-        return !!localStorage.getItem(LOCALSTORAGE_AUTH_KEY_NAME);
+        return !!localStorage.getItem(LOCALSTORAGE_AUTH_KEY_NAME)
+    }
+
+    function getUser() {
+        return localStorage.getItem(LOCAL_STORAGE_USERNAME_KEY);
     }
 
     // Categories
@@ -95,7 +102,8 @@ let data = (function() {
             login,
             register,
             logout,
-            hasUser
+            hasUser,
+            getUser
         },
         categories: {
             get: getCategory

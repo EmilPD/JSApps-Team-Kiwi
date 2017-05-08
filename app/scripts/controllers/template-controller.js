@@ -16,6 +16,10 @@ let TemplateController = (function() {
             if (data.users.hasUser()) {
                 $('#login-register-links').addClass('hidden');
                 $('#logout-link').removeClass('hidden');
+                let loggedInUserName = data.users.getUser();
+                $('#hello-user').html(`Hello ${loggedInUserName}! `);
+            } else {
+                $('#hello-user').addClass('hidden');
             }
         }
 
@@ -118,6 +122,7 @@ let TemplateController = (function() {
             .then(() => {
                 $('#login-register-links').removeClass('hidden');
                 $('#logout-link').addClass('hidden');
+                $('#hello-user').addClass('hidden');
                 toastr.success('Logged out');
                 location.href = '#/home';
             })

@@ -4,6 +4,10 @@
     padding: 2rem 0 0;
 }
 
+#logout-link {
+    padding-left: 0.7rem;
+}
+
 .hidden {
     display: none;
 }
