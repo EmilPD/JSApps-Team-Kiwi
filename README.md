@@ -1,14 +1,44 @@
 # JavaScript-Applications-Team-Kiwi
-Team Work for JavaScript Applications (April 2017)
+Team Work for JavaScript Applications (April-May 2017)
 
-# Team
+## Application Description
 
-Name | TelerikAcademy user | GitHub user
------|-------|-------
-Денислав Стоянов | d3n1000 | denislav48
-Емил Димитров | qwerty123 | EmilPD
+Kiwi Classifieds is a Single Page Application developed by Team "Kiwi" as part of the JavaScript Applications course at Telerik Academy 2016/17.
 
-<h2><a href="https://kiwi-classifieds.herokuapp.com">App Live Demo</a></h2>
+### Main features:
+
+- login
+- register as user
+- register as vip user - as VIP User you have also phone and email stored
+- post new Ad
+- post new Offer - it include Price
+- select category - it will show only Ads/Offers from taht Category
+- If you are logged-in as VIP User, every Ad/Offer that you post will also include your Phone and Email
+- when you are logged-in you can post Comments to every Ads/Offers
+- share Ad/Offer information on facebook
+
+### Used Libraries:
+
+- [SystemJS](https://github.com/systemjs/systemjs)
+- [Navigo](https://github.com/krasimir/navigo)
+- [Twitter Bootstrap](http://getbootstrap.com/)
+- [Handlebars](http://handlebarsjs.com/)
+- [jQuery](https://jquery.com/)
+- [jQuery UI](https://jqueryui.com/) 
+- [crypto-js](https://github.com/brix/crypto-js)
+- [expressjs](https://expressjs.com/)
+- [lowdb](https://github.com/typicode/lowdb)
+- [toastr](https://github.com/CodeSeven/toastr)
+
+### Team Members
+
+| Name | Student system username |
+|:----:|:-----------------------:|
+| [Емил Димитров](https://github.com/EmilPD) | qwerty123   |
+| [Денислав Стоянов](https://github.com/denislav48) | d3n1000 |
+
+
+<h2><a href="https://kiwi-classifieds.herokuapp.com">Live Demo</a></h2>
 <br>
 <div><strong>Project requirements</strong></div>
 <ol>
