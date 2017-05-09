@@ -40,4 +40,13 @@ describe('Categories tests', () => {
             .then(done, done);
     });
 
+    it('expect categories.get function to return a Promise', () => {
+
+        requesterGetStub.returns(Promise.resolve(response));
+
+        const promise = data.categories.get(categoryName);
+        expect(promise).to.be.an.instanceof(Promise);
+
+    });
+
 });
