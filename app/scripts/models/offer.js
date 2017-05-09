@@ -14,7 +14,7 @@ let Offer = (function() {
         
 		set price(value) {
             validator.validateIfUndefinedOrNull(value, 'Price');
-			validator.validateTypeOf(value, 'Price', 'string');
+            validator.validateIfNumber(value, 'Price');
             validator.validateIfEmptyString(value, 'Price');
 			this._price = value;
 		}
