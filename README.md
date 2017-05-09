@@ -40,52 +40,33 @@ Kiwi Classifieds is a Single Page Application developed by Team "Kiwi" as part o
 
 <h2><a href="https://kiwi-classifieds.herokuapp.com">Live Demo</a></h2>
 <br>
-<div><strong>Project requirements</strong></div>
-<ol>
-    <li><strong>Use jQuery</strong></li>
-    <li><strong>Implement OOP design</strong>
-        <ul>
-            <li>At least 3 modules</li>
-            <li>At least 7 types (classes) of objects</li>
-        </ul>
-    </li>
-    <li><strong>Unit tests - Using Mocha, Chai and SinonJS</strong></li>
-    <li><strong>Implement a UI for your application</strong>
-        <ul>
-            <li>JQueryUI - maybe dialog modal message for confirming registration</li>
-        </ul>
-    </li>
-    <li><strong>Use some kind of web data storage</strong>
-        <ul>
-            <li>We use node.js - data.json</li>
-        </ul>
-    </li>
-    <li><strong>Use some kind of local storage</strong>
-        <ul>
-            <li>We can store username and auth key</li>
-        </ul>
-    </li>
-    <li><strong>At least one third-party API to share something from your application</strong>
-        <ul>
-            <li>Share status to Facebook or Twitter</li>
-        </ul>
-    </li>
-    <li><strong>Use Twitter Bootstrap</strong></li>
-    <li><strong>The application must work in the latest versions of the browsers:</strong>
-        <ul>
-            <li>Google Chrome</li>
-            <li>Mozilla Firefox</li>
-            <li>MS Edge</li>
-            <li>Internet Explorer 10/11</li>
-            <li>Opera</li>
-            <li>Apple Safari</li>
-        </ul>
-    </li>
-    <li><strong>Deploy your application on a cloud server of your choice</strong>
-        <ul>
-            <li>We can use Heroku</li>
-        </ul>
-    </li>
-    <li><strong>Record a short video showcasing your application</strong></li>
-    <li><strong>Register your application at Telerik Academy Showcase System</strong></li>
-</ol>
+
+### Project requirements
+
+1. Use JQuery - we use it
+2. Implement OOP design
+- At least 3 modules /there are many more than 3/
+    - requester
+    - data
+    - routing
+    - template loader
+    - many more
+- At least 7 classes
+    - Person
+    - User - extends Person
+    - VIP User - extends User
+    - Ad
+    - Small Ad - extends Ad
+    - Offer - extends Small Ad
+    - Comment
+3. Unit tests using Mocha, Chai and SinonJS - [Tests are here](https://kiwi-classifieds.herokuapp.com/tests/)
+4. Implement a UI for your application - we use JQuery UI for Comment modal dialg
+5. Use some kind of web data storage - we use node.js with express.js and lowdb
+6. Use some kind of local storage - we store authKey and User Name in localStorage
+7. At least one third-party API to share something from your application
+- we use share on Facebook - for every Ad/Offer you can share information on Facebook
+8. Use Twitter Bootstrap - we use it
+9. The application must work in the latest versions of the browsers - [Here are screenshots](https://github.com/EmilPD/JSApps-Team-Kiwi/tree/master/browsers_compatibility)
+10. Deploy your application on a cloud server of your choice - we use [Heroku](https://kiwi-classifieds.herokuapp.com)
+11. Record a short video showcasing your application
+12. Register your application at Telerik Academy Showcase System
