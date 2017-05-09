@@ -159,7 +159,8 @@ select {
 }
 
 select#user-type,
-select#select-ad-type {
+select#select-ad-type,
+select#select-ad-category {
     background: url("../images/select-arrow.png") no-repeat center right !important;
 }
 
