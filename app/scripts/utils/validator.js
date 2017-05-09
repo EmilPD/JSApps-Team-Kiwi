@@ -11,6 +11,12 @@ const validator = {
             throw new Error(property + ' is Empty');
         }
     },
+    validateIfNumber: (value, property) => {
+        if (Number.isNaN(Number(value))) {
+            toastr.error(property + ' is not a Number');
+            throw new Error(property + ' is not a Number');
+        }
+    },
     validateIfUndefinedOrNull: (value, property) => {
         if (typeof value === 'undefined' || value === null) {
             toastr.error(property + ' is undefined or null');
