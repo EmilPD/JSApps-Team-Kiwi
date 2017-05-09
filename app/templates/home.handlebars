@@ -8,10 +8,17 @@
                     <div class="col-xs-12 col-sm-6 col-md-4 eq-height">
                         <article class="ad-single-compact" data-ad-id="{{id}}">
                             <div class="ad-title">{{substr "30" title}}</div>
+                            {{#if price}}
+                                <div class="offer-price">Price: ${{price}}</div>
+                            {{/if}}
                             <div class="ad-description">{{substr "160" description}}</div>
                             <div class="ad-contact-info">
-                                <div class="ad-contact-phone">{{phone}}</div>
-                                <div class="ad-contact-email">{{email}}</div>
+                                {{#if phone}}
+                                    <div class="ad-contact-phone">{{phone}}</div>
+                                {{/if}}
+                                {{#if phone}}
+                                    <div class="ad-contact-email">{{email}}</div>
+                                {{/if}}
                             </div>
                         </article>
                     </div>
