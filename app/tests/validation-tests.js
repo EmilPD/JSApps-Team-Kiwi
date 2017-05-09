@@ -126,5 +126,3 @@ describe('Validation tests', function() {
 
     });
 });
-
-console.log('first test');

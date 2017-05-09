@@ -174,7 +174,6 @@ let TemplateController = (function() {
                             Ad;
                         if (adType === 'smallad') {
                             Ad = new SmallAd(title, description);
-                            console.log('Ad smallad', Ad);
                             newAd = {
                                 category: category,
                                 title: Ad.title,
@@ -182,7 +181,6 @@ let TemplateController = (function() {
                             }
                         } else if (adType === 'offer') {
                             Ad = new Offer(title, description, Number(price));
-                            console.log('Ad offer', Ad);
                             newAd = {
                                 category: category,
                                 title: Ad.title,
@@ -274,7 +272,6 @@ let TemplateController = (function() {
                     })
                     .catch(console.log);
                 } else {
-                    console.log('Can\'t find this page');
                     location.href = '#/404';
                 }
             })
