@@ -63,8 +63,7 @@ Kiwi Classifieds is a Single Page Application developed by Team "Kiwi" as part o
 4. Implement a UI for your application - we use JQuery UI for Comment modal dialg
 5. Use some kind of web data storage - we use node.js with express.js and lowdb
 6. Use some kind of local storage - we store authKey and User Name in localStorage
-7. At least one third-party API to share something from your application
-- we use share on Facebook - for every Ad/Offer you can share information on Facebook
+7. At least one third-party API to share something from your application - we use share on Facebook - for every Ad/Offer you can share information on Facebook
 8. Use Twitter Bootstrap - we use it
 9. The application must work in the latest versions of the browsers - [Here are screenshots](https://github.com/EmilPD/JSApps-Team-Kiwi/tree/master/browsers_compatibility)
 10. Deploy your application on a cloud server of your choice - we use [Heroku](https://kiwi-classifieds.herokuapp.com)
