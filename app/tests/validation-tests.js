@@ -1,12 +1,14 @@
 import { validator } from '../scripts/utils/validator';
 
 describe('Validation tests', function() {
-    let undefinedName; // Undefined argument
+    let undefinedArgument; // Undefined argument
     const name = 'Dan4o';
     const property = 'Name';
     const typeString = 'string';
     const typeArray = 'Array';
     const validString = 'valid string';
+    const validNumber = 123;
+    const inValidNumber = 'ds54';
     const validEmail = 'proba@proba.com';
     const inValidEmail = '@proba@proba.com';
     const validPhone = '0898998877';
@@ -47,11 +49,23 @@ describe('Validation tests', function() {
         });
 
         it('validateIfUndefinedOrNull should throw when the argument provided is undefined', function() {
-            expect(() => validator.validateIfUndefinedOrNull(undefinedName, property)).to.throw(/is undefined or null/);
+            expect(() => validator.validateIfUndefinedOrNull(undefinedArgument, property)).to.throw(/is undefined or null/);
         });
 
         it('validateIfUndefinedOrNull should throw when the argument provided is null', function() {
             expect(() => validator.validateIfUndefinedOrNull(null, property)).to.throw(/is undefined or null/);
+        });
+
+    });
+
+    describe('Number validation tests', () => {
+        
+        it('validateIfNumber should not throw when valid argument is provided', function() {
+            expect(() => validator.validateIfNumber(validNumber, property)).to.not.throw();
+        });
+
+        it('validateIfNumber should throw when the argument provided is not a Number', function() {
+            expect(() => validator.validateIfNumber(inValidNumber, property)).to.throw(/is not a Number/);
         });
 
     });
