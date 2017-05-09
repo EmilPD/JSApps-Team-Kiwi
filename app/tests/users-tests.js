@@ -10,6 +10,9 @@ describe('Users tests', () => {
         localStorage.removeItem(LOCALSTORAGE_AUTH_KEY_NAME);
     };
 
+    beforeEach(clearLocalStorage);
+    afterEach(clearLocalStorage);
+
     let requesterPostStub;
 
     const user = {
@@ -24,9 +27,6 @@ describe('Users tests', () => {
             username: user.username
         }
     };
-
-    beforeEach(clearLocalStorage);
-    afterEach(clearLocalStorage);
 
     describe('Register tests', () => {
         

@@ -1,12 +1,13 @@
 const templateLoader = (() => {
     const cache = {};
 
-    function loadTemplate(templateName) {
+    function loadTemplate(templateName, path) {
+        const templatePath = path || `../templates/${templateName}.handlebars`;
         return new Promise((resolve, reject) => {
             if (cache[templateName]) {
                 resolve(cache[templateName]);
             } else {
-                $.get(`../templates/${templateName}.handlebars`)
+                $.get(templatePath)
                     .done((data) => {
                         let template = Handlebars.compile(data);
                         cache[templateName] = template;
