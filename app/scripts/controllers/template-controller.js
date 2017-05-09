@@ -18,6 +18,7 @@ let TemplateController = (function() {
                 $('#logout-link').removeClass('hidden');
                 let loggedInUserName = data.users.getUser();
                 $('#hello-user').html(`Hello ${loggedInUserName}! `);
+                $('#hello-user').removeClass('hidden');
             } else {
                 $('#hello-user').addClass('hidden');
             }
@@ -167,7 +168,7 @@ let TemplateController = (function() {
                         const category = $('#select-ad-category').val();
                         const title = $('#ad-title').val();
                         const description = $('#ad-description').val();
-                        const price = $('#offer-price').val();
+                        let price = $('#offer-price').val();
 
                         let newAd,
                             Ad;
@@ -180,7 +181,7 @@ let TemplateController = (function() {
                                 description: Ad.description
                             }
                         } else if (adType === 'offer') {
-                            Ad = new Offer(title, description, price);
+                            Ad = new Offer(title, description, Number(price));
                             console.log('Ad offer', Ad);
                             newAd = {
                                 category: category,
@@ -227,6 +228,8 @@ let TemplateController = (function() {
 
             data.classifieds.get(id)
             .then((result) => {
+                if (!!result && !!result.result && typeof result.result.id === 'number') {
+                
                 Promise.all([result, tl.loadTemplate('singlead')])
                     .then(([result, template]) => $('#main').html(template(result)))
                     .then(() => {
@@ -270,6 +273,10 @@ let TemplateController = (function() {
                         });
                     })
                     .catch(console.log);
+                } else {
+                    console.log('Can\'t find this page');
+                    location.href = '#/404';
+                }
             })
             
         }
